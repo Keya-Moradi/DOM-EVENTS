@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #805cf6;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,12 +10,12 @@ body {
 }
 
 .container {
-  background: rgb(102, 229, 251);
+  background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 1300px;
-  width: 100%;
+  max-width: 500px;
+  width: 90%;
 }
 
 h1 {
@@ -30,6 +30,8 @@ p {
 
 .button-group {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
@@ -41,6 +43,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  flex: 1;
+  margin: 5px;
 }
 
 button:hover {
@@ -78,4 +82,27 @@ li button {
 
 li button:hover {
   background-color: #c82333;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+  .container {
+      width: 95%;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  button {
+      padding: 8px 15px;
+  }
+
+  input {
+      padding: 8px;
+  }
 }
